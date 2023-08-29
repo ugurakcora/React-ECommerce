@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -11,7 +12,21 @@ import { useState } from "react";
 _redux.setupAxios(axios, store);
 
 function App() {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (!localStorage.getItem("firstVisit")) {
+        localStorage.setItem("firstVisit", "true");
+        window.location.reload();
+      }
+    }, 1000);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
+
   const [value, setValue] = useState("");
+
   return (
     <Provider store={store}>
       <PersistGate loading={"Loading"} persistor={persistor}>
