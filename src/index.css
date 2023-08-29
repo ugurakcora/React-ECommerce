@@ -8,12 +8,3 @@ button{
 a{
     cursor: pointer;
 }
-
-.total-frame-container {
-  max-height: 200px;
-  overflow: auto;
-}
-
-.total-frame-content {
-  padding: 4px;
-}
