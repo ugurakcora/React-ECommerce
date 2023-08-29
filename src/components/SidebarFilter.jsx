@@ -109,7 +109,7 @@ const SidebarFilter = ({ sort, setSort, products, items, setItems }) => {
     });
   };
   return (
-    <div className="flex lg:flex-col gap-5 overflow-x-auto lg:overflow-visible mb-10 lg:justify-center lg:justify-start">
+    <div className="flex lg:flex-col gap-5 overflow-x-auto lg:overflow-visible mb-10 lg:justify-start">
       <div>
         <span className="text-secondary text-[12px]">Sort by</span>
         <div className="bg-white w-[220px] flex h-[158px] overflow-y-scroll flex-col gap-[15px] p-4 text-sm shadow-xl">
