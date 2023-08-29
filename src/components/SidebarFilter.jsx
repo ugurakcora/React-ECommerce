@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { allModels, baseBrands } from "../data/staticDatas";
+import { allModels, baseBrands } from "../data/data";
 import { arrayControl } from "../helper/arrayControl";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { apiUrl } from "../../../data/staticDatas";
+import { apiUrl } from "../../../data/data";
 
 export function getProducts(data) {
   var config = {

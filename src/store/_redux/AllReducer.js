@@ -4,7 +4,7 @@ import storage from "redux-persist/lib/storage";
 import * as items from "../_redux/items/slice";
 import * as card from "../_redux/card/slice";
 import { encryptTransform } from "redux-persist-transform-encrypt";
-import { reduxKey } from "../../data/staticDatas";
+import { reduxKey } from "../../data/data";
 
 export const itemReducer = persistReducer(
   {

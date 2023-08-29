@@ -1,4 +1,4 @@
-import { fakeDatas } from "../data/staticDatas";
+import { fakeDatas } from "../data/data";
 
 // Gelen verileri düzenler.
 export const itemParser = (data) => {
