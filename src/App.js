@@ -34,7 +34,7 @@ function App() {
           <Navbar value={value} setValue={setValue} />
           <Routes>
             <Route path="/" exact element={<HomePage value={value} />} />
-            <Route path="/productDetail/:id" element={<ProductDetail />} />
+            <Route path="/product-detail/:id" element={<ProductDetail />} />
           </Routes>
         </BrowserRouter>
       </PersistGate>

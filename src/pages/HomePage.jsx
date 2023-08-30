@@ -31,7 +31,7 @@ function HomePage({ value }) {
 
   // Ürünün detayına gitmek için
   const productDetail = (product) => {
-    navigate(`/productDetail/${product.id}`, { state: { product: product } });
+    navigate(`/product-detail/${product.id}`, { state: { product: product } });
   };
 
   // Ürünleri filtrelemek için
